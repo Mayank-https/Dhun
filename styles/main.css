@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#top-header {
+  color: #f9faf8;
+  background-color: #1f2937;
+  padding: 16px 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+#top-header #logo {
+  flex: 1 1 200px;
+}
+
+#links {
+  padding: 16px;
+  display: flex;
+  gap: 20px;
+}
+
+#links a {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
+  border-bottom: solid 2px #1f2937;
+  transition: border 0.33s;
+}
+
+#links a:hover {
+  border-bottom: solid 2px #e5e7eb;
+}
+
+#welcome {
+  padding: 120px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 50px;
+  color: #f9faf8;
+  background-color: #1f2937;
+  text-justify: newspaper;
+}
+
+#welcome article {
+  flex-basis: 25rem;
+}
+
+#welcome > article h2 {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+#welcome > article p {
+  font-size: 18px;
+  padding: 16px 0;
+}
+
+#hero-image img {
+  max-height: 300px;
+}
+
+#welcome button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+
+#welcome button:hover {
+  color: #3882f6;
+  background-color: #f9faf8;
+}
+
+#info {
+  padding: 20px;
+  text-align: center;
+  height: auto;
+  color: #1f2937;
+}
+
+#info #feature-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#info h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+}
+
+#info figure {
+  padding: 50px;
+}
+
+#info figure img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  transform: scale(1);
+  box-shadow: 2px 2px 2px lightgray;
+  transition: all 0.36s;
+}
+
+#info figure:hover img {
+  border: none;
+  transform: scale(1.025);
+  box-shadow: 2px 2px 2px lightgray;
+}
+
+#info figure figcaption {
+  width: 150px;
+  margin-top: 1rem;
+  font-style: oblique;
+}
+
+#quote-text {
+  color: #1f2937;
+  background-color: rgb(235, 234, 234);
+  display: flex;
+  flex-direction: column;
+  padding: 100px 200px;
+  font-size: 36px;
+  font-weight: light;
+  font-style: italic;
+}
+
+#quote-author {
+  padding-top: 1rem;
+  text-align: right;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+  padding: 1rem;
+  font-weight: lighter;
+}
+
+#signup-guide {
+  margin: 80px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 75%;
+  background-color: #3882f6;
+  color: #f9faf8;
+  padding: 2.5rem;
+  border-radius: 5px;
+}
+
+#signup-guide button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: 3px solid #f9faf8;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+
+#signup-guide button:hover {
+  color: #3882f6;
+  background-color: #f9faf8;
+  border-color: #f9faf8;
+}
