@@ -186,6 +186,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   width: 75%;
   background-color: #3882f6;
   color: #f9faf8;
@@ -193,8 +194,11 @@ footer {
   border-radius: 5px;
 }
 
+#signup-guide * {
+  margin-bottom: 0.5rem;
+}
+
 #signup-guide button {
-  margin-top: 2rem;
   background-color: #3882f6;
   color: #f9faf8;
   border: 3px solid #f9faf8;
