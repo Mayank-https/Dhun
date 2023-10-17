@@ -5,15 +5,21 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+html,
 body {
   height: 100vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#top-header,
+#welcome {
+  padding: 1rem 3rem;
 }
 
 #top-header {
   color: #f9faf8;
   background-color: #1f2937;
-  padding: 16px 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -43,17 +49,17 @@ body {
 }
 
 #welcome {
-  padding: 120px;
   display: flex;
   gap: 3rem;
   justify-content: space-between;
   align-items: center;
   color: #f9faf8;
   background-color: #1f2937;
+  min-height: 90vh;
 }
 
 #welcome article {
-  flex: 0 0 25rem;
+  max-width: 25rem;
 }
 
 #welcome > article h2 {
@@ -63,7 +69,7 @@ body {
 
 #welcome > article p {
   font-size: 18px;
-  padding: 16px 0;
+  margin: 1.5rem 0;
 }
 
 #hero-image {
@@ -85,9 +91,20 @@ body {
   transition: 0.25s;
 }
 
+#scroll-box {
+  margin: 1.25rem 0;
+  background-color: #e5e7eb !important;
+  color: #3882f6 !important;
+  opacity: 0.75;
+}
+
 #welcome button:hover {
   color: #3882f6;
   background-color: #f9faf8;
+}
+
+#scroll-box:hover {
+  opacity: 1;
 }
 
 #info {
@@ -198,7 +215,7 @@ footer {
     background-blend-mode: overlay;
   }
 
-  #welcome figure img {
+  #welcome figure {
     display: none;
   }
 
@@ -208,8 +225,14 @@ footer {
 }
 
 @media (max-width: 554px) {
+  #welcome {
+    background-position: 25% 50%;
+  }
   #info figure {
     display: flex;
     gap: 1.4rem;
+  }
+  #quote-text blockquote {
+    font-size: 80%;
   }
 }
